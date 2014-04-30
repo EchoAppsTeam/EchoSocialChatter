@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Echo Social Chatter v{%=packageVersions.stable%} Demo</title>
+</head>
+
+<body>
+
+	<script type="text/javascript" src="//cdn.echoenabled.com/sdk/v3/loader.js"></script>
+
+	<div id="container" style="margin: 0px auto; width: 50%; max-width: 440px;"></div>
+
+	<script type="text/javascript">
+
+		Echo.Loader.initApplication({
+			"script": "{%=baseURL%}/app.js",
+			"component": "Echo.Apps.SocialChatter",
+			"backplane": {
+				"serverBaseURL": "https://api.echoenabled.com/v1",
+				"busName": "echo"
+			},
+			"config": {
+				"target": document.getElementById("container"),
+				//"targetURL": "http://stream-plus.echoplatform.com/demo",
+				//"targetURL": "http://demo-mikhailov.rhcloud.com/social-source-input/ft64ftfb49",
+				"targetURL": "http://aboutecho.com/social-source-input/mv6mvnc02s",
+				"dependencies": {
+					"Janrain": {"appId": "echo-appserver"},
+					"StreamServer": {"appkey": "echo.echo.streamserver.echo.prod"},
+					"FilePicker": {"apiKey": "AFLWUBllDRwWZl7sQO1V1z"},
+					"embedly": {"apiKey": "5945901611864679a8761b0fcaa56f87"}
+				}
+			}
+		});
+
+	</script>
+
+</body>
+</html>
