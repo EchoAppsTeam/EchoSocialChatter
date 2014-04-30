@@ -150,6 +150,12 @@ dashboard.methods.declareInitialConfig = function() {
 			},
 			"StreamServer": {
 				"appkey": keys.length ? keys[0].key : undefined
+			},
+			"FilePicker": {
+				"apiKey": "AFLWUBllDRwWZl7sQO1V1z"
+			},
+			"embedly": {
+				"apiKey": "5945901611864679a8761b0fcaa56f87"
 			}
 		}
 	};
