@@ -4,5 +4,8 @@
 		"id": "echo-social-chatter-dev",
 		"name": "Social Chatter (Dev)"
 	},
-	"baseURL": "//echoplatform.com/sandbox/staging/apps/echo/social-chatter/v{%=packageVersions.stable%}"
+	"baseURLs": {
+		"dev": "//echoplatform.com/sandbox/staging/apps/echo/social-chatter/v{%=packageVersions.stable%}/dev",
+		"prod": "//echoplatform.com/sandbox/staging/apps/echo/social-chatter/v{%=packageVersions.stable%}"
+	}
 }

@@ -4,5 +4,8 @@
 		"id": "echo-social-chatter",
 		"name": "Social Chatter"
 	},
-	"baseURL": "//cdn.echoenabled.com/apps/echo/social-chatter/v{%=packageVersions.stable%}"
+	"baseURLs": {
+		"dev":  "//cdn.echoenabled.com/apps/echo/social-chatter/v{%=packageVersions.stable%}/dev"
+		"prod": "//cdn.echoenabled.com/apps/echo/social-chatter/v{%=packageVersions.stable%}"
+	}
 }
