@@ -26,7 +26,7 @@ chatter.config = {
 };
 
 chatter.dependencies = [{
-	"url": "//cdn.echoenabled.com/apps/echo/conversations/v2/dev/app.js",
+	"url": "//cdn.echoenabled.com/apps/echo/conversations/v2/app.js",
 	"app": "Echo.Apps.Conversations"
 }];
 
