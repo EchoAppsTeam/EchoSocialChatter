@@ -32,13 +32,13 @@
 		"title": "Documentation",
 		"config": {
 			"src": "http://emb.echoplatform.com/social-chatter/docs/overview/"
-	}
+		}
 	}],
 	"client_widget": {
 		"component": "Echo.Apps.SocialChatter",
 		"scripts": {
-			"dev": {%=baseURLs.dev%}/app.js,
-			"prod": {%=baseURLs.prod%}/app.js
+			"dev": "{%=baseURLs.dev%}/app.js",
+			"prod": "{%=baseURLs.prod%}/app.js"
 		}
 	},
 	"cloudapp_protocol_version": "1.0.0"
