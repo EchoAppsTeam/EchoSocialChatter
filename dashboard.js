@@ -24,7 +24,7 @@ dashboard.dependencies = [{
 	"url": "{config:cdnBaseURL.apps.appserver}/controls/configurator.js",
 	"control": "Echo.AppServer.Controls.Configurator"
 }, {
-	"url": "{config:cdnBaseURL.apps.dataserver}/full.pack.js",
+	"url": "//cdn.echoenabled.com/apps/echo/dataserver/v3/full.pack.js",
 	"control": "Echo.DataServer.Controls.Pack"
 }];
 
