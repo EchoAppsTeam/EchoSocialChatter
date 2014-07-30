@@ -1,7 +1,7 @@
 {
 	"id": "{%=manifest.id%}",
 	"name": "{%=manifest.name%}",
-	"description": "Social Chatter application allows you to configure multiple data sources and visualize them on a page",
+	"description": "Collect and display chatter from the Social Web",
 	"app_version": "{%=packageVersions.stable%}",
 	"icon": "{%=baseURLs.prod%}/images/icon.png",
 	"developer": {
