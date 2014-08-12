@@ -44,7 +44,7 @@
 			"url": "{%= apiBaseURLs.AppServer %}/endpoints/dataserver/instance/remove"
 		},
 		"instance/add": {
-			"url": "{%= apiBaseURLs.AppServer %}/endpoints/datserver/instance/add"
+			"url": "{%= apiBaseURLs.AppServer %}/endpoints/dataserver/instance/add"
 		}
 	}
 }
