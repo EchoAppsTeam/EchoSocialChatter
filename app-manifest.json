@@ -1,9 +1,9 @@
 {
 	"id": "{%=manifest.id%}",
 	"name": "{%=manifest.name%}",
-	"description": "Social Chatter application allows you to configure multiple data sources and visualize them on a page",
+	"description": "Collect and display chatter from the Social Web",
 	"app_version": "{%=packageVersions.stable%}",
-	"icon": "{%=baseURLs.prod%}/images/icon.png",
+	"icon": "{%=appBaseURLs.prod%}/images/icon.png",
 	"developer": {
 		"id": "echo",
 		"name": "Echo",
@@ -15,12 +15,9 @@
 		"id": "instances",
 		"type": "instances",
 		"title": "Instances",
-		"script": "{%=baseURLs.prod%}/dashboard.js",
+		"script": "{%=appBaseURLs.prod%}/dashboard.js",
 		"component": "Echo.Apps.SocialChatter.Dashboard",
 		"config": {
-			"instanceManager": {
-				"instance": {"useLoadingIcon": true}
-			},
 			"appkeys": "{data:apps.streamserver.appkeys}",
 			"janrainapps": "{data:apps.janrain.apps}",
 			"customer": "{data:customer}",
@@ -37,9 +34,17 @@
 	"client_widget": {
 		"component": "Echo.Apps.SocialChatter",
 		"scripts": {
-			"dev": "{%=baseURLs.dev%}/app.js",
-			"prod": "{%=baseURLs.prod%}/app.js"
+			"dev": "{%=appBaseURLs.dev%}/app.js",
+			"prod": "{%=appBaseURLs.prod%}/app.js"
 		}
 	},
-	"cloudapp_protocol_version": "1.0.0"
+	"cloudapp_protocol_version": "1.0.0",
+	"endpoints": {
+		"instance/remove": {
+			"url": "{%= apiBaseURLs.AppServer %}/endpoints/dataserver/instance/remove"
+		},
+		"instance/add": {
+			"url": "{%= apiBaseURLs.AppServer %}/endpoints/dataserver/instance/add"
+		}
+	}
 }
