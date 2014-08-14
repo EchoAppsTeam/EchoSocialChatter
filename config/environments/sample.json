@@ -1,11 +1,15 @@
 {
-	"version": 1,
+	"version": 2,
 	"manifest": {
 		"id": "",
 		"name": ""
 	},
-	"baseURLs": {
+	"appBaseURLs": {
 		"dev": "",
 		"prod": ""
+	},
+	"apiBaseURLs": {
+		"DataServer": "",
+		"AppServer": ""
 	}
 }
