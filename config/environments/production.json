@@ -9,7 +9,7 @@
 		"prod": "//cdn.echoenabled.com/apps/echo/social-chatter/v{%=packageVersions.stable%}"
 	},
 	"apiBaseURLs": {
-		"DataServer": "https://api.dataserver.aboutecho.com/v1",
+		"DataServer": "https://api.dataserver.echoenabled.com/v1",
 		"AppServer": "http://api.appserver.aboutecho.com"
 	}
 }
