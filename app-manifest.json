@@ -1,9 +1,9 @@
 {
-	"id": "{%=manifest.id%}",
-	"name": "{%=manifest.name%}",
+	"id": "{%= manifest.id %}",
+	"name": "{%= manifest.name %}",
 	"description": "Collect and display chatter from the Social Web",
-	"app_version": "{%=packageVersions.stable%}",
-	"icon": "{%=appBaseURLs.prod%}/images/icon.png",
+	"app_version": "{%= packageVersions.stable %}",
+	"icon": "{%= appBaseURLs.prod %}/images/icon.png",
 	"developer": {
 		"id": "echo",
 		"name": "Echo",
@@ -15,14 +15,8 @@
 		"id": "instances",
 		"type": "instances",
 		"title": "Instances",
-		"script": "{%=appBaseURLs.prod%}/dashboard.js",
-		"component": "Echo.Apps.SocialChatter.Dashboard",
-		"config": {
-			"appkeys": "{data:apps.streamserver.appkeys}",
-			"janrainapps": "{data:apps.janrain.apps}",
-			"customer": "{data:customer}",
-			"domains": "{data:apps.streamserver.domains}"
-		}
+		"script": "{%= appBaseURLs.prod %}/dashboard.js",
+		"component": "Echo.Apps.SocialChatter.Dashboard"
 	}, {
 		"id": "docs",
 		"type": "external",
@@ -34,8 +28,8 @@
 	"client_widget": {
 		"component": "Echo.Apps.SocialChatter",
 		"scripts": {
-			"dev": "{%=appBaseURLs.dev%}/app.js",
-			"prod": "{%=appBaseURLs.prod%}/app.js"
+			"dev": "{%= appBaseURLs.dev %}/app.js",
+			"prod": "{%= appBaseURLs.prod %}/app.js"
 		}
 	},
 	"cloudapp_protocol_version": "1.0.0",
