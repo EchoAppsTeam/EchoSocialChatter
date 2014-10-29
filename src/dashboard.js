@@ -30,20 +30,6 @@ dashboard.config = {
 };
 
 dashboard.config.ecl = [{
-	"name": "targetURL",
-	"component": "Echo.DataServer.Controls.Dashboard.DataSourceGroup",
-	"type": "string",
-	"required": true,
-	"config": {
-		"title": "",
-		"labels": {
-			"dataserverBundleName": "Echo Social Chatter Auto-Generated Bundle for {instanceName}"
-		},
-		"apiBaseURLs": {
-			"DataServer": "{%= apiBaseURLs.DataServer %}/"
-		}
-	}
-}, {
 	"component": "Group",
 	"name": "dependencies",
 	"type": "object",
@@ -109,6 +95,21 @@ dashboard.config.ecl = [{
 		}
 	},
 	"items": []
+}, {
+	"name": "targetURL",
+	"component": "Echo.DataServer.Controls.Dashboard.DataSourceGroup",
+	"type": "string",
+	"required": true,
+	"config": {
+		"title": "",
+		"expanded": false,
+		"labels": {
+			"dataserverBundleName": "Echo Social Chatter Auto-Generated Bundle for {instanceName}"
+		},
+		"apiBaseURLs": {
+			"DataServer": "{%= apiBaseURLs.DataServer %}/"
+		}
+	}
 }];
 
 dashboard.config.normalizer = {
