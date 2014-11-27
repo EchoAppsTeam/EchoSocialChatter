@@ -1,15 +1,15 @@
 {
 	"version": 2,
 	"manifest": {
-		"id": "echo-social-chatter-dev",
-		"name": "Stream (Dev)"
+		"id": "echo-social-chatter",
+		"name": "Stream"
 	},
 	"appBaseURLs": {
-		"dev": "//echoplatform.com/sandbox/staging<%= release.options.versionPath() %>/dev",
-		"prod": "//echoplatform.com/sandbox/staging<%= release.options.versionPath() %>"
+		"dev": "//cdn.echoplatform.com<%= release.options.versionPath() %>/dev",
+		"prod": "//cdn.echoplatform.com<%= release.options.versionPath() %>"
 	},
 	"apiBaseURLs": {
 		"DataServer": "//ds0.ul.js-kit.com/api",
-		"AppServer": "http://api.staging.appserver.aboutecho.com"
+		"AppServer": "http://api.staging.echostudio.co"
 	}
 }
