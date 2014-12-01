@@ -1,6 +1,6 @@
 {
-	"id": "{%= manifest.id %}",
-	"name": "{%= manifest.name %}",
+	"id": "echo-social-chatter",
+	"name": "Stream",
 	"description": "Collect and display chatter from the Social Web",
 	"app_version": "{%= packageVersions.stable %}",
 	"icon": "{%= appBaseURLs.prod %}/images/icon.png",
